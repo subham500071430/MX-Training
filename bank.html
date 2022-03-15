@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Banking</title>
+    <script>
+
+        function bank(){
+            this.balance=0;
+            this.openAccount = function(balance){
+                this.balance=balance;
+                document.write("Opened account with "+balance);
+            }
+            this.withdraw = function(balance){
+                if(balance>this.balance)
+                document.write("Insufficent balance");
+                else
+                {   
+                    this.balance = this.balance - balance; 
+                    document.write(" Withdrawn Successful ");  
+                    document.write("<br>")    
+                    document.write("Current Amount " + this.balance);
+                 }
+                }
+            this.deposit = function(balance){
+                this.balance += balance;
+                document.write("Deposited Amount " + balance)
+                document.write("<br>")                
+                document.write("Current Amount " + this.balance)
+            }
+        }
+
+        var account = new bank();
+
+        account.openAccount(25000);
+        document.write("<br>");
+        account.withdraw(2500);
+        document.write("<br>");
+        account.deposit(25000);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

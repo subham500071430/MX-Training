@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Page Title</title>
+    <script>      
+               
+        function Taskdeletion(){
+            this.arr = ["Playing","Sleeping","Dancing","Drinking"];
+            document.write(this.arr);
+            document.write("<br>");
+            this.delete= function(i){
+                this.arr.splice(i,1);               
+                return this.arr;
+            }
+            
+        }        
+        var task = new Taskdeletion();
+        document.write(task.delete(2));   
+
+
+       
+
+ </script>
+    
+</head>
+<body>
+
+</body>
+</html>
