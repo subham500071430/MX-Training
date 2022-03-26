@@ -1,0 +1,30 @@
+
+    <body>
+           <br><br><br><br>
+          <form style="margin: auto; width: 220px;">
+           
+          <div class = "form-group">
+           <label class = "sr-only" for ="Balance" >Balance</label>
+           <input type = "number" class="form-control" [(ngModel)]="bal" name="inbal">
+          </div>
+           
+          <div class = "form-group">
+            <label class = "sr-only" for ="Current Balance" >Current Balance</label>
+            <input type = "number" class="form-control"  [(ngModel)]="curr_bal" name="incurrbal">  
+           </div>
+           <br>
+
+           <div class = "button">
+               
+            <button type="button" class="btn btn-primary" (click)="openAccount()" >New Account</button>  
+            <button type="button" class="btn btn-primary" (click)="Deposit()" >Deposit</button> 
+            <button type="button" class="btn btn-primary" (click)="Withdraw()">Withdraw</button>
+
+           </div> 
+           
+        
+          </form>
+          
+    </body>
+
+    

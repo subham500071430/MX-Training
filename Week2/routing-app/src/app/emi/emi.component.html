@@ -1,0 +1,26 @@
+
+<form>
+    <div class="form-group">
+      <label for="input1">Principal</label>
+      <input type="number" class="form-control" [(ngModel)]="amount" placeholder="Enter Amount" name="inamount">
+      
+    </div>
+    <div class="form-group">
+      <label for="input2">Interest Rate</label>
+      <input type="number" class="form-control" [(ngModel)]="rate" placeholder="Enter Interest Rate" name="inrate">
+    </div>
+    <div class="form-group">
+        <label for="input4">Tenure</label>
+        <input type="number" class="form-control" [(ngModel)]="tenure" placeholder="Enter Tenure(in months)" name="inTenure">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" (click)="calculate()">Calculate EMI</button>
+      </div>
+      
+      <div class="form-group">
+        <label for="input5">EMI/MONTH</label>
+        <input type="number" class="form-control" [value]="emi"  name="inemi">
+      </div> 
+    
+  </form>
+  
