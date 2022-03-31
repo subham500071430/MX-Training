@@ -21,7 +21,7 @@ export class EmiComponent implements OnInit {
      this.rate = this.rate/1200
      let p = Math.pow((1+this.rate),this.tenure)
      let q = p/(p-1)
-
+     
      this.emi = this.amount*this.rate*q
   }
 

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankComponent implements OnInit {
 
-    bal: number = 0
-    curr_bal: number = 0
+    bal: any 
+    curr_bal: any
 
   constructor() { }
 
@@ -17,9 +17,22 @@ export class BankComponent implements OnInit {
     
 
     openAccount(){
+
     var Amount= this.bal;
-     this.curr_bal = Amount
-     alert(Amount)
+    
+    if(Amount='')
+    {
+      alert("Enter amount")
+    }
+    else if(Amount<1000)
+    {
+      alert("Minimum 1000 needed to open account")
+    }
+    else
+    {
+       this.curr_bal = Amount
+    }
+     
     }
 
     Withdraw(){
@@ -27,7 +40,7 @@ export class BankComponent implements OnInit {
 
       var balanceAmt = this.curr_bal-this.bal
      
-      if(this.bal == 0){
+      if(this.bal == ''){
              alert("Enter Amount")
          }
       else if(this.bal > this.curr_bal){
@@ -39,6 +52,7 @@ export class BankComponent implements OnInit {
          }
      
      }
+
      Deposit(){
       var totalBalance=this.curr_bal;
       var Amount=this.bal;
