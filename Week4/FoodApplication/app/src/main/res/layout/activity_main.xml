@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="0dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Food"
+                android:textColor="@color/black"
+                android:textSize="28dp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/text0"
+                android:background="@drawable/pizza" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/text0"
+                android:layout_toRightOf="@id/image1"
+                android:background="@drawable/pasta" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/text2"
+                android:layout_toRightOf="@id/image1"
+                android:background="@drawable/biryani" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/text1"
+                android:layout_toLeftOf="@id/image3"
+                android:background="@drawable/pastry" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image1"
+                android:layout_toLeftOf="@+id/image2"
+                android:textStyle=""
+                android:gravity="center"
+                android:text="Pizza"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image2"
+                android:layout_toRightOf="@+id/image1"
+                android:gravity="center"
+                android:text="Pasta"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image4"
+                android:layout_toLeftOf="@+id/image3"
+                android:gravity="center"
+                android:text="Pastry"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image4"
+                android:layout_toRightOf="@+id/image4"
+                android:gravity="center"
+                android:text="Biryani"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="136dp"
+                android:layout_toRightOf="@id/image2" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
