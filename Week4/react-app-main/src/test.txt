@@ -1,0 +1,64 @@
+<h1>React App</h1>
+     <p>React js is view library</p>
+     <h2>My name is {name}</h2>
+     <h3>Sum of  {a} + {b} is {a + b}</h3>
+     <ul>
+     {
+       nums.filter(num =>  num > 5).map((num) => {
+         return <li>{num}</li>
+       })
+     }
+     </ul>
+     <h4>Students Details</h4>
+     <table>
+       <thead> <th>Name</th><th>Course</th><th>Fee</th> </thead>
+       <tbody>
+         { students.filter(st => st.course == "PHP").map((st) => {
+           return  <tr>     <td>{st.name}</td> <td>{st.course}</td><td>{st.fee}</td>   </tr>
+         })
+        }
+       </tbody>
+     </table>
+
+let name = "Amit Kumar";
+let a = 10;
+let b = 20;
+
+var nums = [2,5,8,10];
+
+var students = [
+  { name: "Aman", course: "PHP", fee: 20000 },
+  { name: "Sumit", course: "React", fee: 22000 },
+  { name: "Vinit", course: "Node", fee: 19000 },
+  { name: "Kamal", course: "PHP", fee: 26000 },
+  { name: "Raman", course: "Angular", fee: 180000 },
+];
+
+
+<p>{sum}</p>
+      <p><input type="text" value={num1} onChange={changeNum1} /> <input type="text" value={num2} onChange={changeNum2} /><button onClick={sumNum}>Sum</button></p>
+      <h2>{name}</h2>
+     <input type="text" value={name} onChange={changeName} /> <button onClick={updateName}>Update Name</button>
+
+
+     const [name, setName] = useState("Jagan");
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
+  const [sum, setSum] = useState(0);
+
+  const changeNum1 = (e) => {
+    setNum1(e.target.value);
+  }
+  const changeNum2 = (e) => {
+    setNum2(e.target.value);
+  }
+  const sumNum = () =>{
+   setSum(num1 * 1 + num2 * 1);
+  }
+  const changeName = (e) => {
+    setName(e.target.value)
+  }
+  const updateName = () => {
+    setName("Magan");
+  }
+  

@@ -1,0 +1,23 @@
+<h1>Credit</h1>
+
+
+
+    <h2>{{salary}}</h2>
+    
+    <div *ngIf="salary<1000">
+        <strong>silver</strong>
+    </div>
+    <div *ngIf="salary >1000&&salary<2000">
+        <strong>gold</strong>
+    </div>
+    <div *ngIf="salary>2000">
+        <strong>diamond</strong>
+    </div>
+
+    <p>sum of {{a}} and {{b}} is {{c}}</p>
+    <input type="text" placeholder="enter salary" [(ngModel)]="salary">  
+    
+   
+
+
+

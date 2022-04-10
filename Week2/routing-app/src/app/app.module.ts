@@ -7,6 +7,7 @@ import { BankComponent } from './bank/bank.component';
 import { FormComponent } from './form/form.component';
 import { EmiComponent } from './emi/emi.component';
 import { FormsModule } from '@angular/forms';
+import { CreditComponent } from './credit/credit.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     BankComponent,
     FormComponent,
-    EmiComponent, 
+    EmiComponent,
+    CreditComponent, 
   ],
   imports: [
     BrowserModule,
